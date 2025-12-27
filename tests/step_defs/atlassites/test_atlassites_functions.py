@@ -97,11 +97,10 @@ def verify_timepod_adventures_page_is_open(browser):
     browser.verify_text_within_text_on_page(AtlassitesLocators.section_title_by_guid(AtlasSiteData.immersive_learning_section_guids['TimePod Adventures header']), AtlasSiteData.resources_dropdown_options_text[1])
     browser.wait_for_element_displayed(AtlassitesLocators.section_title_by_guid(AtlasSiteData.immersive_learning_section_guids['Prehistoric Earth, TimePod Adventures page']))
 
-@then('Verify juniorfiremarshal home page should be displayed')
-def verify_juniorfiremarshal_publiclanding_displayed(browser):
+@then('Verify Junior Fire Marshal home page should be displayed')
+def verify_junior_fire_marshal_public_landing_displayed(browser):
     browser.wait_for_element_not_displayed(AccessValidationLocators.loading_spinner, LONG_DEFAULT_TIMEOUT)
     browser.is_element_not_displayed_for_period(AccessValidationLocators.loading_bar, DEFAULT_TIMEOUT)
-   # browser.wait_for_element_displayed(AccessValidationLocators.loaded_screen)
     browser.wait_for_element_displayed(AtlassitesLocators.De_log)
     browser.wait_for_element_displayed(AtlassitesLocators.junior_firemarshal)
     browser.wait_for_element_displayed(AtlassitesLocators.hero_image)
