@@ -13,7 +13,7 @@ Feature:Verify Junior Fire Marshal PublicApp Homepage Student Activities Deputiz
 
     Scenario: VerifyJuniorFireMarshalPublicAppHomepageStudentActivitiesDeputizationPartners&DESection
 
-        Then  Verify juniorfiremarshal home page should be displayed
+        Then  Verify Junior Fire Marshal home page should be displayed
         Then  Verify quicklinks bar in homepage
         # @when(parsers.parse('Click on the "{link}" link in quicklinks'))
         When  Click on the "Student Activities" link in quicklinks
